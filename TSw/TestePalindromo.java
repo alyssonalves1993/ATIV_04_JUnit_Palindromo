@@ -4,9 +4,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class TesteCalc {
-	// criando um objeto c a apartir do metodo calc
-	Calc c = new Calc();
+public class TestePalindromo{
+	// criando um objeto 
+	//Calc c = new Calc();
 
 	// declarando as varíaveis
 	@Before
@@ -22,9 +22,9 @@ public class TesteCalc {
 		String num2 = "1";
 		int result;
 
-		result = c.soma(num1,num2);
+		//result = c.soma(num1,num2);
 		
-		assertEquals(2, result);
+		//assertEquals(2, result);
 	}
 	@Test
 	public void TesteSomaNegativoPositivo() {
@@ -33,9 +33,9 @@ public class TesteCalc {
 		String num2 = "+1";
 		int result;
 
-		result = c.soma(num1,num2);
+		//result = c.soma(num1,num2);
 
-		assertEquals(0, result);
+		//assertEquals(0, result);
 	}
 	@Test
 	public void VerificarNulo() {
@@ -43,9 +43,9 @@ public class TesteCalc {
 		String num2 = null;
 		int result;
 
-		result = c.soma(num1,num2);
+		//result = c.soma(num1,num2);
 
-		assertEquals(0, result);
+		//assertEquals(0, result);
 	}
 	@After
 	public void Finalizar(){
