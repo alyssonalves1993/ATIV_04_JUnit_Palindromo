@@ -6,51 +6,48 @@ import static org.junit.Assert.*;
 
 public class TestePalindromo{
 	// criando um objeto 
-	//Calc c = new Calc();
+	Palindromo p = new Palindromo();
 
 	// declarando as varíaveis
 	@Before
 	public void Inicializar(){
-	String num1 = null;
-	String num2 = null;
+	String texto = null;
+	Boolean result = null;
 	}
 	
 	@Test
-	public void TesteSoma() {
+	public void TesteNomeSimplesVerdadeiro() {
 
-		String num1 = "1";
-		String num2 = "1";
-		int result;
+		String texto = "arara";
+		Boolean result ;
 
-		//result = c.soma(num1,num2);
+		result = p.isPalindromo(texto);
 		
-		//assertEquals(2, result);
+		assertEquals(result, true);
 	}
 	@Test
-	public void TesteSomaNegativoPositivo() {
+	public void TesteNomeSimplesCaseSentive() {
 
-		String num1 = "-1";
-		String num2 = "+1";
-		int result;
+		String texto = "ararA";
+		Boolean result ;
 
-		//result = c.soma(num1,num2);
-
-		//assertEquals(0, result);
+		result = p.isPalindromo(texto);
+		
+		assertEquals(result, true);
 	}
+
 	@Test
 	public void VerificarNulo() {
-		String num1 = null;
-		String num2 = null;
-		int result;
+		String texto = null;
+		Boolean result ;
 
-		//result = c.soma(num1,num2);
-
-		//assertEquals(0, result);
+		result = p.isPalindromo(texto);
+		
+		assertEquals(result, true);
 	}
 	@After
 	public void Finalizar(){
-	String num1 = null;
-	String num2 = null;
+	String texto = null;
 	Double result = null;
 	}
 }
