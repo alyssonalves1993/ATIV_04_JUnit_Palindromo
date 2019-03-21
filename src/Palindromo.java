@@ -3,11 +3,11 @@ public class Palindromo implements Ipalindromo {
 
 	public boolean isPalindromo(String texto) {
 		String textoinvertido = null;
-		texto = texto.toUpperCase();
-		textoinvertido = new StringBuffer(texto).reverse().toString();
-		if ( texto == null) {
-			return true;
-		} else {
+		if (texto == null){
+			return false;
+		}else{
+			texto = texto.toUpperCase();
+			textoinvertido = new StringBuffer(texto).reverse().toString();
 			if (texto.equals(textoinvertido)) {
 				// é palindrome
 				return true;
@@ -16,6 +16,7 @@ public class Palindromo implements Ipalindromo {
 				return false;
 			}
 		}
+
 	}
 
 }
