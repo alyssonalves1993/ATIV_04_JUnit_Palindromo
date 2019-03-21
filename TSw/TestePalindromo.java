@@ -45,6 +45,25 @@ public class TestePalindromo{
 		
 		assertEquals(result, false);
 	}
+	
+	@Test
+	public void VerificarAcento() {
+		String texto = "RÊviver";
+		Boolean result ;
+
+		result = p.isPalindromo(texto);
+		
+		assertEquals(result, true);
+	}
+	@Test
+	public void VerificarFrases() {
+		String texto = "Após a Sopa";
+		Boolean result ;
+
+		result = p.isPalindromo(texto);
+		
+		assertEquals(result, true);
+	}
 	@After
 	public void Finalizar(){
 	String texto = null;
