@@ -11,7 +11,7 @@ public class Palindromo implements Ipalindromo {
 			texto = texto.toUpperCase();
 			texto = Normalizer.normalize(texto, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
 			textoinvertido = new StringBuffer(texto).reverse().toString();
-			if (texto.equals(textoinvertido)) {
+			if (texto.equals(textoinvertido) && !texto.equals("") && !texto.equals(" ")) {
 				// é palindrome
 				return true;
 			} else {

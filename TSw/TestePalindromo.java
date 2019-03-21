@@ -64,6 +64,24 @@ public class TestePalindromo{
 		
 		assertEquals(result, true);
 	}
+	@Test
+	public void VerificarVazio() {
+		String texto = "";
+		Boolean result ;
+
+		result = p.isPalindromo(texto);
+		
+		assertEquals(result, false);
+	}
+	@Test
+	public void VerificarComEspacoEmBranco() {
+		String texto = " ";
+		Boolean result ;
+
+		result = p.isPalindromo(texto);
+		
+		assertEquals(result, false);
+	}
 	@After
 	public void Finalizar(){
 	String texto = null;
