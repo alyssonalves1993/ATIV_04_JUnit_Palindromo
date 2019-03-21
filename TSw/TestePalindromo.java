@@ -43,7 +43,7 @@ public class TestePalindromo{
 
 		result = p.isPalindromo(texto);
 		
-		assertEquals(result, true);
+		assertEquals(result, false);
 	}
 	@After
 	public void Finalizar(){
